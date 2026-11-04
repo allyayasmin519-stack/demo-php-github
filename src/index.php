@@ -110,7 +110,7 @@ $products = $pdo->query("SELECT * FROM products ORDER BY id DESC")->fetchAll();
                            value="<?= htmlspecialchars($editProduct['price'] ?? '') ?>">
                 </div>
             </div>
-            <label>Description</label>
+            <label>Product Description</label>
             <textarea name="description" rows="2"><?= htmlspecialchars($editProduct['description'] ?? '') ?></textarea>
             <label>Quantity</label>
             <input type="number" name="quantity" min="0" required
@@ -127,7 +127,7 @@ $products = $pdo->query("SELECT * FROM products ORDER BY id DESC")->fetchAll();
         <table>
             <thead>
                 <tr>
-                    <th>ID</th><th>Product Name</th><th>Description</th>
+                    <th>ID</th><th>Product Name</th><th>Product Description</th>
                     <th>Price</th><th>Qty</th><th>Actions</th>
                 </tr>
             </thead>
