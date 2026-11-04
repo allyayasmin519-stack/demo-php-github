@@ -41,7 +41,7 @@ jobs:
       - name: Pull Latest Code in Deployment Directory
         shell: powershell
         run: |
-          $deployDir = "C:\CICD\htp-deployment\demo-php-github>"
+          $deployDir = "C:\RajWork\2026\ESLearning\github\htp-deployment\demo-php-github"
 
           if (-not (Test-Path $deployDir)) {
               throw "Deployment directory not found: $deployDir. Clone the repo there first."
